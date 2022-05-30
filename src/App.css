@@ -1,15 +1,33 @@
-.Container {
-  display: flex;
-  flex-direction: column;
+body {
+	line-height: 1;
+  min-height: 100vh;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: lightgreen;
+}
 
+.Container {
+  /**border: 1px solid black;**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header {
   display: flex;
-  flex: 2;
   justify-content: space-between;
+  width: 300px;
 }
 
 .card-grid {
-  flex: 8;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
